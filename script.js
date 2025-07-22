@@ -10,10 +10,10 @@ const form = document.getElementById('voteForm');
       const age = Number(ageInput.value.trim());
 
       if (!name || !age) {
-        alert("Please enter valid details.");
+        alert("Please enter valid details");
         return;
       }
-const checkVotingEligibility = new Promise((resolve, reject) => {
+	const checkVotingEligibility = new Promise((resolve, reject) => {
         setTimeout(() => {
           if (age >= 18) {
             resolve(`Welcome, ${name}. You can vote.`);
